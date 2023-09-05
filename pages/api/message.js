@@ -1,14 +1,9 @@
-// import {
-//     Configuration,
-//     OpenAIApi
-// } from "openai";
 const OpenAI = require('openai');
 
 const configuration = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
     organization: process.env.OPENAI_ORGANIZATION_ID,
 });
-// const openAI = new OpenAIApi(configuration);
 
 let messageHistory = []; // variable para almacenar el historial de mensajes
 
